@@ -1,0 +1,29 @@
+Joshua Czajka
+Game: Settlers of Catan
+
+Project Description: 
+	The Settlers of Catan is a popular board game which can be played with 3-4 players on a hexagonal shaped board with 19 hexagonal pieces that depict resources that can be obtained in the game. Each player is given 4 cities, 5 settlements, and 15 roads. The point of the game is to earn resources to build roads, settlements, and cities to earn points, the first player to 10 points wins. Settlements are worth 1 point, cities are worth 2 points, and additional points can be earned using a Development Card called “Victory Point”, which are worth 1 point each or by obtaining specialty cards such as “Largest Army” or “Longest Road” which each are worth 2 points. Unlike settlements, cities and victory points, specialty cards can change players as the game progresses which causes the players to lose or gain points if the card is lost or gained. 
+
+	The game consists of 5 resource cards: wheat, rock, clay, wool, and wood. Players earn these cards by having a settlement or city one or more of the points of the corresponding resource tiles. Settlements allot the player 1 of the resources and a city allots 2 resources. The tiles are placed randomly on the board, and each are assigned randomly a numeric value that can be achieved by rolling a pair of dice. Numbers 1, 2, 11 and 12 only appear once on the board and the remaining numbers appear twice. There is also one additional tile, the “Desert”, which does not allot any resources and is the starting position of the “Robber”. The “Robber” is a piece that can be moved to any tile to block the resource from being obtained by the players who are able to receive that resource. The robber can move under two conditions, the first is if a player rolls a 7, this allows the player who rolled the 7 to move the robber to any position they like and to steal a card from any player who is affected by that tile. The second way for the “Robber” to be moved is if a player plays a “Knight” card, which is a development card, like the “Victory Point” card previously mentioned. Same rules apply to the “Knight” card as if the player rolled a 7. 
+
+	Development cards consist of 5 different types of cards. The two previously mentioned are “Victory Point” and “Knight” cards. There are also three “Progress” cards: “Road Building”, which allows you to build 2 additional roads for no resources; “Year of Plenty”, which allows the card to be used in substitution of any 2 resource cards; “Monopoly”, which forces every player to give the player who played the card all their resources of a specified resource. Development cards can only be played once and cannot be played on the turn they are picked up. The only exception to this rule is if the card pulled is a “Victory Point” and the point will give the player the 10 points they need to win the game. 
+
+	To start the game each player takes turns, in a snake order, with the first player being the first and last person to place one settlement and one adjacent road. On the second placement each player pulls one of each resource from which the settlement touches. Settlements cannot be placed on adjacent points, must be 1 or more spaces away from another settlement. Roads are also unable to intersect with each other. Once one players road blocks another players road they can no longer build in that direction. 
+Class File Names/Descriptions:
+	Gameboard: This is a container class for the game, it will hold the positions for all the tiles on the board. This will also hold the Roll_Dice function.
+
+	Tile: This will create the resource tiles to be added to the Gameboard Class. Each tile will have a set resource as well as a set numerical value the tile is worth. 
+
+	Resource Card: This will create the resource cards that are collected by the players. 
+
+	Development Card: This will create the development cards for the game. It will also include the description of the card as well perform the actions the card allows.
+
+	Road: This will create the road object which will interact with the Gameboard Class and Tile Class.
+
+	Settlement: This will create the settlement object which will interact with the Gameboard Class, the Tile Class, and City Class. 
+
+	City: This will create the city object which will interact with the Gameboard Class, the Tile Class, and Settlement Class.
+
+	Specialty Card: This will create the specialty cards for the game. It will provide the description of the card as well as the allot the necessary points provided from the card. It will interact with the Player Class.
+
+	Player: This will create the object player. It will hold the players Name, Current_Points, Resource_Cards, Specialty_Cards, Development_Cards, Roads, Settlements, and Cities, for each player. 
